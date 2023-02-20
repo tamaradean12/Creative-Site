@@ -1,0 +1,93 @@
+@import url('https//fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+html{
+    color: white;
+    background-image: url(unsplash-portrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(24, 24, 24);
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0 100px 0 100px;
+}
+
+#header-nav, #nav-items, #social-media{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#nav-items li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 5px 0px 5px;
+}
+
+main{
+    margin-top: 10%;
+}
+
+.main-btn{
+    background-color: rgba(255, 255, 255, 0.904);
+    font-size: 14px;
+    border-style: none;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.614) ;    
+    position: relative;
+    left: 140px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.main-btn:hover{
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+h1{
+    font-size: 550%;
+}
+
+.changing-txt{
+    color: blueviolet;
+}
+
+p{
+    margin-top: -40px;
+    margin-right: 50%;
+}
+
+/*-------------------------- Mobile ---------------------------*/
+@media screen and (min-width: 0px) {
+
+    html{
+        background-size: 168%;
+    }
+
+    .main-btn{
+        left: 50px;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    p{
+        margin-top: 3px;
+        margin-right: -20px;
+        font-size: 15px;
+    }
+
+}
